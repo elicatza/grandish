@@ -1,0 +1,8 @@
+gcc
+%c
+
+-Wall
+-Wextra
+-std=c99
+-pedantic
+

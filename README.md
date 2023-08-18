@@ -1,5 +1,5 @@
 # Something Sort of Grandish
-generate randomish strings from system entropy.
+Generate randomish strings from system entropy.
 
 Only tested on Linux.
 
