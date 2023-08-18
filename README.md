@@ -1,16 +1,25 @@
 # Something Sort of Grandish
-generate randomish strings.
+generate randomish strings from system entropy.
 
-## Build & Install
+Only tested on Linux.
+
+## Build dependencies
+- make
+- gcc
+
+## Build, install & uninstall
 ```bash
-# Build
-gcc main.c -o grandish
+make
 
-# Install
-cp grandish /usr/local/bin/
+# Global Install
+sudo make install
+# OR (local install)
+make PREFIX=~/.local install
 
 # Uninstall
-rm /usr/local/bin/grandish 
+sudo make uninstall
+# OR (if you don't remember install path)
+make PREFIX=$(dirname $(dirname $(command -v grandish))) uninstall
 ```
 
 ## Roadmap
@@ -22,4 +31,4 @@ rm /usr/local/bin/grandish
   - [X] Amount
 - [ ] Helpful error messages
 - [ ] Create man page
-  - [ ] Create Makefile
+- [X] Create Makefile

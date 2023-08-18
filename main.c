@@ -61,7 +61,7 @@ int main(int argc, char **argv)
         rh_args_parse(argc, argv, args, &info);
         if (argc == 1) {
             printf("%s\n", info.usage);
-            printf("This program requires flags see `%s --help` for more details\n", argv[0]);
+            printf("This program requires flags see `%s --help` for more details.\n", argv[0]);
             return 0;
         }
 
